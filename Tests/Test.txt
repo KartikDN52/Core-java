@@ -1,0 +1,167 @@
+// APTITUDE TEST 2
+
+1)d
+2)b
+3)c
+4)a
+5)c
+6)
+7)c
+8)
+9)a
+10)
+11)
+12)a
+13)d
+14)a
+
+
+// Theory Question
+
+1)Constructor is nothing but set of instruction called whenever the obbject is created.
+*Constructor must have the same as the class
+*doesn't have any implicit return type
+
+* Syntax :
+public class ClassName{
+
+	
+	public static void main(String[] args){
+	
+	}
+}
+
+5) MethodOverloading is nothing but methods having same name but differ in number or type of the parameters.
+
+*There are 3 types of method overloading :
+
+1.by changing the number of parameters
+2.by changing the type of the parameters
+3. by changing the order of the parameters
+
+Example for changing the number of parameters :
+ public class Addition{
+
+	public static void main(String[] args){
+
+	int Value = getResult(1,1);
+	System.out.println(Value);
+
+	int Value1 = getResult(1,1,1);  //Arguments passed with three values
+	System.out.println(Value1);
+	 
+	}
+
+	public static int getResult(int a,int b){
+	int result=a+b;
+	return result;
+	}
+	
+	public static int getResult(int a,int b,int c){ // Changed the parameters from two to three
+	int result=a+b+c;
+	return result;
+	}
+
+}
+
+6) Variables are nothing but container for storing the values which can be used during the execution of programs.
+
+* Syntax for Variables :
+	
+	Datatype referenceName = Value;
+
+* Example :
+
+	int noOfKeysInKeyboard=108;
+
+7) this keyword used to refer the variable belongs to this class.
+* by using this keyword programmer can save space of defining the variable again.
+
+Example :
+
+public class Runner{
+	
+	String employeeName;
+	String employeeAddress;
+	int salary;
+	float annualCPC;
+	
+
+
+	public static void main(String[] args){
+	
+	company getInfo = new company("Kartik","Jamkhandi",30000,3.5f);
+	System.out.println(getInfo);
+	
+	
+	
+	}
+	
+	public company(String employeeName,String employeeAddress,int salary,float annualCPC){
+	this.employeeName=employeeName;
+	this.employeeAddress=employeeAddress;
+	this.salary=salary;
+	this.annualCPC=annualCPC;
+	}
+
+}
+
+8) String is nothing but sequnece of the character.
+* declared under the datatype String
+* the value for string must be inbetween double quote(" ").
+
+*Syntax :
+	
+	Datatype  referenceName = "Value";
+
+* Example :
+	
+	String nameOfTheStudent="Kartik";
+
+9) Methods of String Class
+1.toUpperCase
+2.toLowerCase
+3.isEmpty
+4.concate
+5.LastIndexOf
+
+1. toUpperCase : this method is used to convert the existing string to uppercase.
+2.toLowerCase : this method works same as that of toUpperCase but converts the existing string to lowercase.
+3.isEmpty : this methosd check whether  array is empty or not and retruns the boolean value after execution.
+4.concate : this methos is used to add another string to an existing string .
+5.LastIndexOf : this method is used to check the last index of the array.
+
+10) whenever we declare the string it stored under the reference name , but when we initialized it again the reference name is changed but the value assigned is 
+remain same . hence strings are immutable ..
+
+// Progamming  Questions 
+
+2) public class Car {
+    	String name;
+    	 int number;
+
+    public Car(String name, int number) {
+        this.name = name;
+        this.number = number;
+    }
+
+    public String name() {
+        return name;
+    }
+
+    public int number() {
+        return number;
+    }
+
+    public static void main(String[] args) {
+        // Creating an object and initializing values
+        Car myCar = new Car("Verns", 52);
+
+        System.out.println(myCar.name());  
+        System.out.println(myCar.number());  
+    }
+}
+
+
+
+
